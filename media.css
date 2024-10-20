@@ -1,0 +1,279 @@
+/*xs*/
+@media (max-width: 639px){
+   
+    
+}
+/* s */
+@media (min-width: 640px){
+    .container {  display: grid;
+        grid-template-columns: 1fr 1fr;
+        /* grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr; */
+        grid-auto-columns: 1fr;
+        gap: 0px 0px;
+        grid-auto-flow: row;
+        grid-template-areas:
+          "learn-more learn-more"
+          "learn-more learn-more"
+          "iphone-6s iphone-6s"
+          "iphone-6s iphone-6s"
+          "new-keyboard games-ourpasion"
+          "new-keyboard games-ourpasion"
+          "iMAC-RETINA iMAC-RETINA"
+          "iMAC-RETINA iMAC-RETINA"
+          "connect-with-twitter iCloud"
+          "connect-with-twitter iCloud"
+          "Labtop iCloud"
+          "Labtop iCloud"
+          "Much-MuchBetter-Experience-2 Much-MuchBetter-Experience-2"
+          "Tv Tv"
+          "Tv Tv";
+      }
+      
+      .learn-more { grid-area: learn-more; }
+      
+      .iphone-6s { grid-area: iphone-6s; }
+      
+      .new-keyboard { grid-area: new-keyboard; }
+      
+      .games-ourpasion { grid-area: games-ourpasion; }
+      
+      .iMAC-RETINA { grid-area: iMAC-RETINA; }
+      
+      .connect-with-twitter { grid-area: connect-with-twitter; }
+      
+      .iCloud { grid-area: iCloud; }
+      
+      .Labtop { grid-area: Labtop; }
+      
+      .Much-MuchBetter-Experience-2 { grid-area: Much-MuchBetter-Experience-2; }
+      
+      .Tv { grid-area: Tv; }
+      /*Learn More*/
+      .learn-more-container{
+        width: 68%;
+      }
+      /*iphone 6s*/
+      .iphone-6s{
+        display: flex;
+        align-content: flex-end;
+      }
+      .iphone-container{
+        display: flex;
+        width: 90%;
+        height: 100%;
+      }
+     .iphone-description,.ipone-img{
+        width: 50%;
+     }
+     .ipone-img{
+        align-self: flex-end;
+     }
+     .iphone-description{
+        align-self: center;
+     }
+    /*keyboard*/ 
+    .new-keyboard{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    /*Games Ourpasion*/
+    .games-ourpasion{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    /*iMAC RETINA*/
+    .iMAC-container{
+        display: flex;
+        height: 100%;
+        width: 90%;
+    }
+    .imac-img,.imac-text{
+        width: 50%;
+      
+    }
+    .imac-text{
+        align-self: center;
+    }
+    .imac-img{
+        align-self: flex-end;
+    }
+    .imac-img img{
+        position: relative;
+        left: -50%;
+        width: 100%;
+        bottom: -50px;
+      } 
+      /*Labtop*/
+      .labtop-text{
+        padding-bottom: 200px;
+      }
+      .laptop-img img{
+        width: 100%;
+        transform: translate(-10%);
+      }
+      /* .labtop-text{
+        padding: 150px 0px;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+      } */
+      /*TV*/
+      .Tv{
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+    }
+    .Tv div{
+        width: 50%;
+    }
+    .tv-text{
+        padding: 70px;
+    }
+}
+/* md */
+@media (min-width: 768px){
+    
+}
+/* lg */
+@media (min-width: 1024px){
+    .container {  display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: .4fr .4fr .4fr .4fr .4fr .4fr .4fr;
+        
+        grid-auto-columns: 1fr;
+        gap: 0px 0px;
+        grid-auto-flow: row;
+        grid-template-areas:
+          "iphone-6s iphone-6s learn-more learn-more"
+          "iphone-6s iphone-6s learn-more learn-more"
+          "new-keyboard iMAC-RETINA iMAC-RETINA iCloud"
+          "new-keyboard iMAC-RETINA iMAC-RETINA iCloud"
+          "games-ourpasion Labtop Labtop iCloud"
+          "games-ourpasion Labtop Labtop iCloud"
+          "connect-with-twitter Much-MuchBetter-Experience-2 Tv Tv";
+      }
+      
+      .iphone-6s { grid-area: iphone-6s; }
+      
+      .learn-more { grid-area: learn-more; }
+      
+      .new-keyboard { grid-area: new-keyboard; }
+      
+      .iMAC-RETINA { grid-area: iMAC-RETINA; }
+      
+      .iCloud { grid-area: iCloud; }
+      
+      .games-ourpasion { grid-area: games-ourpasion; }
+      
+      .Labtop { grid-area: Labtop; }
+      
+      .connect-with-twitter { grid-area: connect-with-twitter; }
+      
+      .Much-MuchBetter-Experience-2 { grid-area: Much-MuchBetter-Experience-2; }
+      
+      .Tv { grid-area: Tv; }
+      
+      /* Learn More */
+      .learn-more{
+        height:auto;
+      }
+      .learn-more h1{
+        font-size: 48px;
+        padding: 10px;
+      }
+      .learn-more-container{
+        width: 70%;
+      }
+    /* iphone 6s */
+    .iphone-container{
+        display: flex;
+        flex-wrap: wrap;
+        width: 90%;
+        /* height: 100%; */
+        justify-content: space-between;
+    }
+    .iphone-description,.ipone-img{
+        width: 50%;
+    }
+    .ipone-img img{
+        width: 66%;
+    }
+    .ipone-img{
+        align-content: flex-end;
+    }
+    .iphone-description{
+        align-content:center;
+    }
+    /* new-keyboard */
+    .new-keyboard{
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        z-index: 666;
+    }
+    .keyboard-container{
+        width: 70%;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .keyboard-container img{
+        width: 100%;
+    }
+/* iMAC RETINA */
+.iMAC-RETINA{
+    display: flex;
+    align-items:flex-end;
+}
+ .iMAC-RETINA .iMAC-container{
+       display: flex;
+        flex-wrap: wrap;
+  }
+  .imac-img,.imac-text{
+    width: 50%;
+  }
+  .imac-img img{
+    position: relative;
+    left: -50%;
+    width: 100%;
+    bottom: -33px;
+  } 
+  /*Labtop*/
+  .labtop-text h2{
+    font-weight: 700;
+  }
+  /* Twitter */
+  .twitter-circle{
+    height:100%;
+    width:auto;
+    /* padding: 0px 50px; */
+}
+/*TV*/
+  .Tv{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+.Tv div{
+    width: 50%;
+}
+.tv-text{
+    padding: 70px;
+}
+}
+/* xl */
+@media (min-width: 1280px){
+    
+}
+
+/* xxl */
+@media (min-width: 1536px){
+    
+}
